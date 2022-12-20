@@ -14,18 +14,14 @@ if (namder_y > 0 && namder_x > 0)
     {
         for (int j = 0; j < TwoArray.GetLength(1); j++)
         {
-
             TwoArray[i, j] = random.NextDouble() * (55.34 + 55.34) - 55.34;  // RandomObj.NextDouble() * (end - begin) + begin
-
         }
-
     }
 
     for (int i = 0; i < TwoArray.GetLength(0); i++)
     {
         for (int j = 0; j < TwoArray.GetLength(1); j++)
         {
-
             Console.Write(Math.Round(TwoArray[i, j], random.Next(1, 5)) + "\t");
         }
         Console.WriteLine();
@@ -33,7 +29,7 @@ if (namder_y > 0 && namder_x > 0)
 }
 
 else
-{   
+{
     Console.WriteLine();
     Console.WriteLine("\nДопускается  ввод числа больше 0.");
     goto loop1;
